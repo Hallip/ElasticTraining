@@ -55,7 +55,6 @@
 
             <div class="grid-row grid-row--center">
                 <div class="grid-column mt3 mb2">
-                    <img src="/img/security.svg" alt="Absolute security">
                 </div>
                 <div class="grid-column span-1"></div>
                 <div class="grid-column mt3 mb2">
@@ -67,10 +66,31 @@
                           <li type="circle">En el sistema de SQL, por una falla del sistema las horas de ingreso quedaron guardadas 5 horas antes de la hora correcta (GTM -5)</li>
                           <li type="circle">El nuevo sistema en ElasticSearch debe tener un field que contenga el usuario empresarial que es el mismo del correo sin el dominio</li>
                           <li type="circle">Los nombres de las columnas deben ser cambiados: ID = Cedula, NAMEIN = Nombre, EMAIL = Email, DATOS = Sede, CIUDAD = Ciudad, PERMISO = PERMISO, FECHAINGRE = FechaDeIngreso</li>
+                          <li type="circle">Se requiere un field que contenga el numero de la sede y la letra del edificio que se llame SedeID</li>
+                          <li type="circle">Se requiere un field que contenga el ID del acceso llado IDacceso y otro que contenga el nivel de acceso otorgado llamado NIVELacceso</li>
                         </ul>
                     </div>
-                    <p class="italic text--gray mb1">Estne, quaeso, inquam, sitienti in bibendo voluptas? Duo Reges: constructio&nbsp;interrete.</p>
-                    <p class="bold">Josh Blenton, Product Manager at&nbsp;Blinkist</p>
+                </div>
+            </div>
+
+            <div class="grid-row grid-row--center">
+                <div class="grid-column mt3 mb2 order-2">
+                    <div class="border--bottom pb2 mb2">
+                        <h2>Datos de acceso</h2>
+                        <ul>
+                          <li type="circle">Host SQL: hallip-database.cb6ax2rd6yiw.us-east-2.rds.amazonaws.com</li>
+                          <li type="circle">Port SQL: 1433</li>
+                          <li type="circle">User SQL: admin</li>
+                          <li type="circle">Password SQL: FARpud68</li>
+                          <li type="circle">Sentencia SQL: SELECT * FROM hallip.INGRESOS</li>
+                          <li type="circle">Usuario Elastic: elastic</li>
+                          <li type="circle">Password: uzr2aSBfBQ9ijbRJqvGjXTMk</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-column span-1"></div>
+                <div class="grid-column mt3 mb2 order-1">
+
                 </div>
             </div>
 
@@ -78,21 +98,14 @@
 
         <!-- Mentioned -->
         <div class="container--lg pt3 pb3 mb2 align--center">
-            <p class="mb2">Mentioned in</p>
-            <span><img class="mentioned" src="/img/mentioned.svg" alt="New York Times, TC, Product Hunt, Recode"></span>
+            <p class="mb2">Crated By</p>
+            <p class="mb2">Juan Montoya Velásquez</p>
+            <p class="mb2">Inter Developer Junion, Clouxter S.A.S</p>
         </div>
 
         <!-- CTA -->
         <div class="bg--dark-gray align--center pt3 pb3">
-            <div class="container pt2 pb2">
-                <img class="cta-image mb2" src="/img/text.svg" alt="Text the app">
-                <p class="h3 text--white mb1 bold">We'll text you the&nbsp;app</p>
-                <p class="text--white mb3">Just insert your number below. Messaging rates&nbsp;apply.</p>
-                <div class="inline-block mr1 no-mr-on-mobile" style="width:280px;max-width:100%">
-                    <input class="form-control" type="tel" placeholder="Phone number">
-                </div>
-                <button class="btn btn--secondary">Send</button>
-            </div>
+
         </div>
 
     </main>
@@ -101,16 +114,6 @@
     <footer class="pt1 pb3 align--center-on-mobile">
         <div class="container">
             <div class="grid-row">
-                <div class="grid-column mt2 span-half">
-                    <p class="small">Design by <a href="https://www.eatapapaya.com" class="link link--text">Papaya</a>. Illustrations from&nbsp;<a href="https://undraw.co/" class="link link--text">Undraw</a>.</p>
-                </div>
-                <div class="grid-column mt2 span-half align--right align--center-on-mobile">
-                    <ul class="no-bullets list--inline">
-                        <li class="mr1"><a href="" class="link"><img class="icon" src="/img/youtube.svg" alt="YouTube"></a></li>
-                        <li class="mr1"><a href="" class="link"><img class="icon" src="/img/twitter.svg" alt="Twitter"></a></li>
-                        <li><a href="" class="link"><img class="icon" src="/img/facebook.svg" alt="Facebook"></a></li>
-                    </ul>
-                </div>
             </div>
         </div>
     </footer>
