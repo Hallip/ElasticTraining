@@ -60,7 +60,7 @@
                 <div class="grid-column mt3 mb2">
                     <div class="border--bottom pb2 mb2">
                         <h2>Enunciado del problema</h2>
-                        <p ALIGN="justify">La empresa fictisia Transous tiene un sistema de base de datos en SQL Server donde guardan la informacion del ingreso del personal a cada una de sus sedes, esta tabla esta compuesta por ID(cedula del empleado), NAMEIN(Nombre del empleado), EMAIL(que es el correo corporativo del empleado), DATOS(la sede y al edificio al que ingreso), CIUDAD(la ciudad donde se hubica la sede), Permiso(El grado del permiso que tuvo al entrar junto con su identificador) y FECHAINGRE(la fecha en la que ingreso a la instalacion), en los lineamientos del area de tecnologia esta la meta de migrar esa base de datos a ElasticSearch. Su sistema en SQL tiene una serie de requerimientos a resolver que seran resultos durante el traspaso usando LogStash</p>
+                        <p ALIGN="justify">La empresa ficticia Transous tiene un sistema de base de datos en SQL Server donde guardan la informacion del ingreso del personal a cada una de sus sedes, esta tabla esta compuesta por ID(cedula del empleado), NAMEIN(Nombre del empleado), EMAIL(que es el correo corporativo del empleado), DATOS(la sede y al edificio al que ingreso), CIUDAD(la ciudad donde se hubica la sede), Permiso(El grado del permiso que tuvo al entrar junto con su identificador) y FECHAINGRE(la fecha en la que ingreso a la instalacion), en los lineamientos del area de tecnologia esta la meta de migrar esa base de datos a ElasticSearch. Su sistema en SQL tiene una serie de requerimientos a resolver que seran resultos durante el traspaso usando LogStash</p>
                         <p>Requerimientos:</p>
                         <ul>
                           <li type="circle">En el sistema de SQL, por una falla del sistema las horas de ingreso quedaron guardadas 5 horas antes de la hora correcta (GTM -5)</li>
@@ -69,6 +69,7 @@
                           <li type="circle">Se requiere un field que contenga el numero de la sede y la letra del edificio que se llame SedeID</li>
                           <li type="circle">Se requiere un field que contenga el ID del acceso llado IDacceso y otro que contenga el nivel de acceso otorgado llamado NIVELacceso</li>
                         </ul>
+                        <p ALIGN="justify">Adicionalmente Transous tiene un script de alertamiento para saber cuando hay un acceso no autorizado, este script lee constantemente un csv en el formato especificado de los requerimentos, las operaciones de lectura de la base de datos y de generación del reporte deben ser ejecutadas en paralelo y por el mismo Logstash</p>
                     </div>
                 </div>
             </div>
