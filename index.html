@@ -69,7 +69,7 @@
                           <li type="circle">Se requiere un field que contenga el numero de la sede y la letra del edificio que se llame SedeID</li>
                           <li type="circle">Se requiere un field que contenga el ID del acceso llado IDacceso y otro que contenga el nivel de acceso otorgado llamado NIVELacceso</li>
                         </ul>
-                        <p ALIGN="justify">Adicionalmente Transous tiene un script de alertamiento para saber cuando hay un acceso no autorizado, este script lee constantemente un csv en el formato especificado de los requerimentos, las operaciones de lectura de la base de datos y de generación del reporte deben ser ejecutadas en paralelo y por el mismo Logstash</p>
+                        <p ALIGN="justify">Adicionalmente Transous tiene un script de alertamiento para saber cuando hay un acceso no autorizado, este script lee constantemente un csv donde unicamente se encuentran los registros posteriores al primero de enero de 2018 y cuyo nivel de accseso es VIP, en el formato especificado de los requerimentos, las operaciones de lectura de la base de datos y de generación del reporte deben ser ejecutadas en paralelo y por el mismo Logstash</p>
                     </div>
                 </div>
             </div>
